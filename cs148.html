@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>CS148 - Introduction to Computer Graphics and Imaging</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Jean-Baptiste Boin</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="classes.html" class="current">Classes</a></div>
+<div class="menu-item"><a href="splash.html">Splash</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>CS148 - Introduction to Computer Graphics and Imaging</h1>
+</div>
+<h2>Scanline image</h2>
+<table class="imgtable"><tr><td>
+<a href="img/scanline.jpg"><img src="img/scanline_small.jpg" alt="Scanline image" /></a>&nbsp;</td>
+<td align="left"></td></tr></table>
+<p>This image was rendered with OpenGL for the scanline assignment of this class.</p>
+<p>I modeled all the meshes as low poly meshes on <a href="http://www.blender.org"><b>Blender</b></a>, and they were then loop-subdivided if needed to look smoother.</p>
+<p>The textures (egg, marble, coffee, orange skin and orange pulp, background) were all taken from the Internet (most of them come from <a href="http://www.cgtextures.com/"><b>CGTextures</b></a>, which has a big database of convenient textures). The pattern from the cereal box is adapted from a T-shirt found online.</p>
+<p>The egg, orange skins, and orange pulp have a normal map, generated from the texture using <a href="http://www.crazybump.com/"><b>CrazyBump</b></a>. The orange skins also have a displacement map so that they don't look too artificial (a sphere with a normal map looked really too artificial), and the same for the donuts. I made the displacement maps from a computer generated cloud pattern on Blender. I could choose the size of the patterns so that the objects would not be too flat or too bumpy.</p>
+<p>The icings of the donuts were a bit tricky : I used a fluid generator with high viscosity to generate a fluid torus falling on a solid torus, and I took one of the images that looked adequate. I then smoothed the surface to get a nice icing.</p>
+<p>I blurred the background to simulate very grossly a depth of field. The result is not that convincing but it's still much better than a uniform background.</p>
+<p>On the whole, this image has some interesting textures and geometry but it still seems very unreal, mainly because of the absence of shadows on the horizontal plane. With more time, I could have designed a way to make them appear by modifying the shader.</p>
+<div id="footer">
+<div id="footer-text">
+Page generated 2013-11-09 23:13:40 PST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>3D with head tracking</title>
+		<style>
+			body { margin: 0; }
+			#container {
+        		position : relative;
+      		}
+      		#drawCanvas {
+        		position : absolute;
+        		left : 0;
+        		top : 0;
+        		-o-transform : scaleX(-1);
+				-webkit-transform : scaleX(-1);
+				transform : scaleX(-1);
+      		}
+      		#renderCanvas {
+        		position : absolute;
+        		left : 0;
+        		top : 0;
+      		}
+			#videoCam {
+				-o-transform : scaleX(-1);
+				-webkit-transform : scaleX(-1);
+				transform : scaleX(-1);
+			}
+		</style>
+	</head>
+	<body>
+		<script src="./js/clmtrackr.js"></script>
+		<script src="./models/model_pca_20_svm.js"></script>
+		<canvas id="renderCanvas"></canvas>
+		<video id="videoCam" width="400" height="300" preload="auto" loop>
+		</video>
+		<canvas id="drawCanvas" width="400" height="300"></canvas>
+		<script src="./js/three.min.js"></script>
+		<script src="./js/scenerender.js"></script>
+		<script src="./js/eyetracking.js"></script>
+	</body>
+</html>
